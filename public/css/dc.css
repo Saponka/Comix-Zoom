@@ -1,0 +1,163 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color: black;
+}
+.dcTitulo{
+    text-align: center;
+    background-color: black;
+    padding-top: 10px;
+}
+
+#imglogodc{
+    width: 299px;
+    height: 350px;
+    
+}
+
+.historia{
+     font-family: Orbitron; 
+   font-size: 20px;
+   background-color: black;
+   color: whitesmoke;
+   margin: 0px 50px 0px 50px;  
+}
+
+.jumbotron-fluid{
+    background-color:rgb(0, 0, 0) ;
+    color: rgb(2, 169, 247);
+    border-radius: 20px; 
+    margin: 0px 20px 0px 20px;
+    box-shadow: 0 0 30px 0 rgb(0, 255, 242),
+    0 0 30px 0 rgb(0, 17, 252), 
+    0 0 10px 0  rgb(0, 195, 255) inset;
+}
+
+h1{
+    font-family:'Orbitron' ;
+    /* color: rgb(9, 5, 255); */
+    text-align: center;
+}
+.lead{
+    color: rgb(255, 254, 254);
+    text-align: center;
+    margin: 0px 50px 0px 50px;
+}
+.h1Dc{
+    border: 2px solid black;
+    background-color: rgb(148, 201, 236);
+    
+}
+#dc{
+    border: 2px solid black;
+    border-radius: 4px;
+    background-color:  rgb(0, 1, 8);;
+    width: 100%;
+  
+    padding: 100px;
+    box-shadow: 0 0 30px 0 rgb(0, 255, 242),
+    0 0 30px 0 rgb(0, 17, 252), 
+    0 0 10px 0  rgb(0, 195, 255) inset;
+}
+/* .inicio{
+    background-color: rgba(0, 0, 0, 0);
+    color: black;
+    margin-top: 25px; 
+
+} */
+ header{
+    width: 700px;
+    margin: auto;
+    border-radius: 20px;  
+} 
+.superHeader{
+    background-image: url(../img/dc/superman/Supermandc1.jpg);
+    box-shadow: 0 0 30px 0 rgb(255, 0, 0),
+    0 0 30px 0 rgb(252, 113, 0), 
+    0 0 10px 0  rgb(251, 255, 0) inset;
+}
+.superman{
+    margin-top: 80px;
+    height: 350px;
+    width: 250px;   
+}
+.batman{
+    margin-top: 80px;
+    height: 350px;
+    width: 220px;   
+    color: white;
+}
+.BatHeader{
+    background-image: url(../img/dc/batman/batmanarkhamorigins.jpg);
+    box-shadow: 0 0 30px 0 rgb(13, 10, 236),
+    0 0 30px 0 rgb(0, 252, 252), 
+    0 0 10px 0  rgb(17, 10, 78) inset;
+}
+.titulosDc{
+    border: 1px solid cornflowerblue;
+    border-radius: 4px;
+    background-color: #000000;
+    color: white;
+    padding-left: 20px;
+    padding-top: 2px;
+}
+.imgenCardHoriz{
+   
+    width: 240px;
+    height: 390px;
+}  
+
+.card-img-top{
+     
+     width: 230px;
+    height: 330px;
+    margin: auto;
+}
+.banners{
+    display: grid;                  
+    justify-content: space-around;
+} 
+h4{
+    text-align: center;
+}
+footer.footer {
+    background-color: black;
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+}
+footer.footer .social-link {
+    display: block;
+    text-decoration: none;
+    height: 4rem;
+    width: 4rem;
+    line-height: 4.3rem;
+    font-size: 1.5rem;
+    background-color: #af1111;
+    transition: background-color 0.15s ease-in-out;
+    box-shadow: 0 3px 3px 0 rgba(0, 0, 0, 0.1);
+}
+footer.footer .social-link:hover {
+    background-color: #02fa4d;
+    text-decoration: none;
+}
+/* media querys */
+
+ @media (max-width: 950px){
+.card-img-top {
+    width: 170px;
+   
+}  
+};
+
+@media (max-width: 767px){
+    .card-img {
+        width: auto;
+       
+    }  
+    };
+
+    
+
+
