@@ -1,7 +1,9 @@
 
 const express = require('express');
- const app = express();                    
- const port = process.env.port || 3000;
+ const app = express(); 
+ const dotenv = require('dotenv');                   
+ const PORT = process.env.PORT || 3000;
+ 
  
 
  //------------------------------ coneccion a la base de datos-------------------------------------------
@@ -17,8 +19,8 @@ app.use(express.urlencoded({extended: false})); //lee formularios
 app.use('/comic',require('./routes/comic'));
 
 //--------port listen ---------------------------------------------------
-app.listen(process.env.port || 3000,() =>{
-    console.log(`Servidor corriendo en el puerto:${port}`);
+app.listen(process.env.PORT || 3000,() =>{
+    console.log(`Servidor corriendo en el puerto:${PORT}`);
 });
  app.on('error',(err)=>{
     console.log(`Error en la ejecuccion del servidor ${err}`);
