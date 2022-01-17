@@ -7,7 +7,7 @@ const express = require('express');
 
  //------------------------------ coneccion a la base de datos-------------------------------------------
 
- const { connection } = require('./DB/config'); // conection traer config.js
+ //const { connection } = require('./DB/config'); // conection traer config.js
 
 //---------------------------MIDDLEWARE----------------------------------------------------------------
 app.use(express.json());
