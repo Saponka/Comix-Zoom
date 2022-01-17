@@ -50,13 +50,6 @@ const buscar = ( (req,res)=>{
     telefono = req.body.telefono;
     mensaje = req.body.mensaje;  
      
-   
-    console.log(nombre);
-    console.log(apellido);
-    console.log(edad);
-    console.log(telefono);
-    console.log(email);
-
     function validacion (){
                  
         if(nombre == "" || apellido == "" || email == ""){

@@ -25,7 +25,7 @@ app.listen(port,() =>{
     console.log(`Error en la ejecuccion del servidor ${err}`);
 });  
 
-module.exports = connection;
+//module.exports = connection;
 
 
 
