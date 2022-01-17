@@ -19,7 +19,7 @@ app.use(express.urlencoded({extended: false})); //lee formularios
 app.use('/comic',require('./routes/comic'));
 
 //--------port listen ---------------------------------------------------
-app.listen(process.env.PORT || 3000,() =>{
+app.listen(PORT,() =>{
     console.log(`Servidor corriendo en el puerto:${PORT}`);
 });
  app.on('error',(err)=>{
