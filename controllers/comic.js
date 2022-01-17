@@ -1,26 +1,23 @@
 
-const knex = require('../DB/config'); 
+//const knex = require('../DB/config'); 
 
-const home = ((req,res)=>{
-    res.send("index") 
-})
 
 const nomina = ( (req,res)=>{          
-       knex
+      /*  knex
        .from('comicForm')
        .then((json)=>{
            res.send({data:json})     
-       })      
+       })  */     
    });
 // --------buscar-adonde----select-where---------------------------------
 const buscar = ( (req,res)=>{     
-      knex
+     /*  knex
       .from('comicForm')
       .where('id',req.params.id) 
       .then((json)=>{
           res.send({data:json})   
       })
-      .catch(error => console.log(error));  
+      .catch(error => console.log(error)); */  
   });    
 //------------------------------POST--------------------------------------------
 /*  const insertar = ( (req,res)=>{
@@ -68,7 +65,7 @@ const buscar = ( (req,res)=>{
               
         } else{
         
-            let data = { 
+          /*   let data = { 
 
                  nombre : req.body.nombre,
                 apellido : req.body.apellido,
@@ -77,18 +74,11 @@ const buscar = ( (req,res)=>{
                 telefono : req.body.telefono,
                 mensaje : req.body.mensaje 
 
-                /* nombre : document.getElementById("nombre"),
-                apellido: document.getElementsById("apellido"),
-                edad: document.getElementsById("edad") ,
-                email: document.getElementsById("email") ,
-                telefono:document.getElementsById("telefono") ,
-                mensaje: document.getElementsById("mensaje")  */
-
             }; 
                  knex('comicForm')
                 .insert(data)
                 .then(()=>{ res.send('formulario Enviado') })
-                .catch(error => console.log(error));
+                .catch(error => console.log(error)); */
 
             // Envio de mensajes para el usuario // crear una funcyion asyncroma
             /* async function main(){
@@ -126,12 +116,12 @@ const buscar = ( (req,res)=>{
            // main().catch(console.error);
         }
         
-    }
+    };
     validacion();
 };
 //----------------------put--------------UPDATE------------------------------------------------------
 const actualizar = ( (req,res)=>{
-        knex('comicForm')
+        /* knex('comicForm')
         .where({id: req.params.id}) 
         .update({
 
@@ -141,24 +131,17 @@ const actualizar = ( (req,res)=>{
             email : req.body.email,
             telefono : req.body.telefono,
             mensaje : req.body.mensaje
-
-            /* nombre : document.getElementsById(nombre),
-            apellido: document.getElementsById(apellido),
-            edad: document.getElementsById(edad) ,
-            email: document.getElementsById(email) ,
-            telefono:document.getElementsById(telefono) ,
-            mensaje: document.getElementByNgetElementsById(mensaje) */
         })
         .then(()=>{ res.send( 'Dato Actualizado')})
-        .catch(error => console.log(error));
+        .catch(error => console.log(error)); */
     });  
 //---------------------------------delete----------------------------------------------
 const borrar = ( (req,res)=>{
-   knex('comicForm')
+   /* knex('comicForm')
    .where({id: req.params.id}) 
    .delete()
     .then(()=>{ res.send( 'Dato borrado')})
-    .catch(error => console.log(error));   
+    .catch(error => console.log(error));  */  
  });
 //----exportar--modulos-----------------------
  module.exports = {

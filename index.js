@@ -16,7 +16,7 @@ app.use(express.urlencoded({extended: false})); //lee formularios
 //-------------ruta----------------------------------------
 
 app.use('/comic',require('./routes/comic'));
-//app.post('/comic/insertar',require('./routes/comic'))
+
 //--------port listen ---------------------------------------------------
 app.listen(port,() =>{
     console.log(`Servidor corriendo en el puerto:${port}`);
