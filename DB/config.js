@@ -7,8 +7,8 @@ const connection = mysql.createConnection({
 host: 'localhost',
 user: 'root',
 port:3306,
-password: 'Heimerdingerchewbacca@501',
-database: 'pwi',
+password: '',
+database: '',
 
 }); 
 
@@ -29,7 +29,7 @@ module.exports = connection; // exportamos la coneccion para usar en el index.js
   */
 
 //--------------conexion con knex----------------------
-const knex = require('knex') ({
+/* const knex = require('knex') ({
     client: 'mysql2',
     connection: {
       host : 'localhost',
@@ -60,4 +60,4 @@ const knex = require('knex') ({
   });
 
    // ----Modulos------------------------
-   module.exports = knex;
+   module.exports = knex; */
