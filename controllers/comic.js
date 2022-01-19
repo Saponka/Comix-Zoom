@@ -1,27 +1,27 @@
 
-//const knex = require('../DB/config'); 
+const knex = require('../DB/config'); 
 
 
 const nomina = ( (req,res)=>{  
 
-      /*   knex
+        knex
        .from('comicForm')
        .then((json)=>{
            res.send({data:json})     
        })       
-        */
+        
    });
 // --------buscar-adonde----select-where---------------------------------
 const buscar = ( (req,res)=>{ 
 
-     /*  knex
+      knex
       .from('comicForm')
       .where('id',req.params.id) 
       .then((json)=>{
           res.send({data:json})   
       })
       .catch(error => console.log(error));  
-       */
+       
   });    
 //------------------------------POST--------------------------------------------
 
@@ -44,7 +44,7 @@ const buscar = ( (req,res)=>{
               res.send(validacion)
               
         } 
-        /* else{
+         else{
         
              let data = { 
 
@@ -62,7 +62,7 @@ const buscar = ( (req,res)=>{
                 .catch(error => console.log(error)); 
 
             
-        } */
+        } 
         
     };
     validacion();
@@ -71,7 +71,7 @@ const buscar = ( (req,res)=>{
 const actualizar = ( (req,res)=>{
 
 
-        /*  knex('comicForm')
+          knex('comicForm')
         .where({id: req.params.id}) 
         .update({
 
@@ -84,16 +84,16 @@ const actualizar = ( (req,res)=>{
         })
         .then(()=>{ res.send( 'Dato Actualizado')})
         .catch(error => console.log(error)); 
- */
+ 
     });  
 //---------------------------------delete----------------------------------------------
 const borrar = ( (req,res)=>{
 
-   /*  knex('comicForm')
+     knex('comicForm')
    .where({id: req.params.id}) 
    .delete()
     .then(()=>{ res.send( 'Dato borrado')})
-    .catch(error => console.log(error)); */  
+    .catch(error => console.log(error));  
  });
 //----exportar--modulos-----------------------
  module.exports = {
