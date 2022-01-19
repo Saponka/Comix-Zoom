@@ -4,8 +4,6 @@ const express = require('express');
  const dotenv = require('dotenv');                   
  const PORT = process.env.PORT || 3000;
  
- 
-
  //------------------------------ coneccion a la base de datos-------------------------------------------
 
  //const { connection } = require('./DB/config'); // conection traer config.js
@@ -25,8 +23,6 @@ app.listen(PORT,() =>{
  app.on('error',(err)=>{
     console.log(`Error en la ejecuccion del servidor ${err}`);
 });  
-
-
 
 //module.exports = connection;
 

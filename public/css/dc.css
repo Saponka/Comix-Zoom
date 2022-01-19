@@ -141,22 +141,12 @@ footer.footer .social-link {
 footer.footer .social-link:hover {
     background-color: #02fa4d;
     text-decoration: none;
-}
-/* media querys */
-
- @media (max-width: 950px){
-.card-img-top {
-    width: 170px;
-   
-}  
 };
 
-@media (max-width: 767px){
-    .card-img {
-        width: auto;
-       
-    }  
-    };
+/* media querys */
+
+ 
+
 
     
 

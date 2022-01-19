@@ -29,7 +29,8 @@ module.exports = connection; // exportamos la coneccion para usar en el index.js
   */
 
 //--------------conexion con knex----------------------
-/* const knex = require('knex') ({
+
+const knex = require('knex') ({
     client: 'mysql2',
     connection: {
       host : 'localhost',
@@ -39,7 +40,7 @@ module.exports = connection; // exportamos la coneccion para usar en el index.js
       database : 'comics'
     },
 
-   // pool: { min: 0, max: 7 }
+   
   });  
  
   knex.schema.hasTable('comicForm').then(function(exists) {
@@ -59,5 +60,6 @@ module.exports = connection; // exportamos la coneccion para usar en el index.js
     }
   });
 
+
    // ----Modulos------------------------
-   module.exports = knex; */
+   module.exports = knex; 

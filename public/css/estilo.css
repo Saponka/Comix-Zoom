@@ -3,14 +3,13 @@
     padding: 0;
 }
 body{
-     /* background: black;  */
+     
      background-image: url(../img/fondos/fondolabrillosnegros.jpg);  
 }
 header{
-/*  background-color: rgb(243 211 109);  */ 
+ 
 display: grid;
 }
-
 /* nav hover */
 #navbarNavAltMarkup a:hover {
   color: red;
@@ -18,8 +17,6 @@ display: grid;
 /* ///////////titulos //////////////*/
 .titulo{
     padding-top: 56px;
-    /* background: linear-gradient(to bottom,red, rgba(255, 30, 0, 0.76), rgb(231, 200, 98)); */
-    /* background: conic-gradient(at 49% 16%, #5f1bd7c2 22%,#3d6893,#934e4ec4 42%,#b3902d 55%,#dd9d4d 63%,#0164049c 70%,#25992a 73%); */
     text-align: center;
     margin: 40px;
     display: flex;
@@ -27,7 +24,6 @@ display: grid;
 }  
 .cartel{
     font-family: 'Permanent Marker'; 
-    /* font-family: 'Tourney'; */
     font-size: 82px;
     padding: 15px;
     border-radius: 20px;  
@@ -35,16 +31,11 @@ display: grid;
     margin: 80px 35px; 
 }
 h1{
-    /* color:honeydew */
     color:rgb(255, 255, 255);
     box-shadow: 0 0 30px 0 rgb(230, 235, 236), 0 0 30px 0 #ffffff, 0 0 10px 0 #070707 inset;
 }
 
-.luces{
-  /*   color: rgb(255, 0, 0);
-   box-shadow: 0 0 40px 0 darkorange,
-   0 0 30px 0 crimson,
-   0 0 10px 0 crimson inset; */  
+.luces{  
    color: rgb(255, 0, 0);
     box-shadow: 0 0 90px 0 red, 0 0 50px 0 #ed6314, 0 0 10px 0 #ff0101 inset; 
 }
@@ -63,8 +54,6 @@ article p{
 .logo{   
    
    display: grid;
-  /*  grid-template-columns: 300px 300px;
-   grid-template-rows: 300px 300px; */
    grid-template-columns: 287px 287px;
     grid-template-rows: 250px 250px;
     grid-column-gap: 2px;
@@ -134,7 +123,7 @@ width: 200px;
 #logoidw:hover{
     transition: 1s;
     height: 120px;
-   /*  width: 222px; */
+   
 }
 
 /* //////////////miller/moore /////////////*/
@@ -181,7 +170,15 @@ width: 200px;
 #logofrankAlan:hover{
     transition:  0,5s;
     height: 230px;
-     /* border: 1px solid white; */   
+        
+}
+
+#prox {
+   border: 3px solid white; 
+   display: flex;
+   justify-content:space-evenly;
+   width: 100%; 
+   background-color: black;
 }
 /* ---------Formulario---------------------- */
 .container2 {
@@ -351,7 +348,7 @@ h3{
 
 /* //////mediaquerys */
 
-@media (max-width: 650px){
+@media (max-width: 750px){
     #logofrankAlan{
         width: 270px;
        
@@ -375,6 +372,16 @@ h3{
            width: 160px; ;
        }
        
-    }
+    };
+    @media (max-width: 700px){
+      
+        .head {
+            display: flex;
+            flex-direction: column ;
+        }
+        
+     };
+
+ 
 
    
