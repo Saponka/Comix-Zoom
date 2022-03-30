@@ -11,7 +11,7 @@ display: grid;
 }
 /* nav hover */
 #navbarNavAltMarkup a:hover {
-  color: red;
+  color: rgb(243, 8, 8);
 }
 /* ///////////titulos //////////////*/
 .titulo{
