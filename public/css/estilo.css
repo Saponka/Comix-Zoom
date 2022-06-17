@@ -8,6 +8,7 @@ body{
 }
 header{
 display: grid;
+justify-content: center;
 }
 /* nav hover */
 #navbarNavAltMarkup a:hover {
@@ -15,11 +16,10 @@ display: grid;
 }
 /* ///////////titulos //////////////*/
 .titulo{
-    padding-top: 56px;
-    text-align: center;
-    margin: 40px;
+    
+    margin: 25px;
     display: flex;
-    justify-content: center;
+    
 }  
 .cartel{
     font-family: 'Permanent Marker'; 
