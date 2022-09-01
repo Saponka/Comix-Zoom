@@ -178,7 +178,7 @@ article p{
     border:1px solid black;
     border-radius: 8px;
     padding: 20px 40px;
-    box-shadow: 0  0 10px 5px rgba(236, 92, 25, 0.959);
+    box-shadow: 0  0 10px 5px rgba(11, 247, 11, 0.959);
 } 
 .divContainer{
     position: relative;
@@ -196,7 +196,7 @@ article p{
     padding: 0 4px;
      background-color: white; 
     color: #DADCE0; 
-    color: orangered;
+    color: rgb(51, 88, 8);
     font-size: 16px;
     transition: 0.5s;
     z-index: 0;
@@ -215,7 +215,7 @@ article p{
     outline: none;
     background: none;
     z-index: 1;
-    color: orangered;
+    color: rgb(43, 255, 0);
 }
 .input:focus + .label {
     top: -7px;
@@ -223,10 +223,10 @@ article p{
     z-index: 10;
     font-size: 14px;
     font-weight: 600;
-    color: orangered;
+    color: rgb(77, 255, 0);
 }
 .input:focus {
-    border: 2px solid orangered;
+    border: 2px solid rgb(30, 255, 0);
 }
 .input:not(:placeholder-shown)+ .label {
     top: -7px;
@@ -238,16 +238,16 @@ article p{
 .textArea{
     width: 399px; 
     height: 159px;
-    color: orangered;
-    border: 2px solid orangered;
+    color: rgb(123, 255, 0);
+    border: 2px solid rgb(7, 7, 7);
     font-size: large;
     font-weight: bold;
 }
-.btn-primary {
+.btn-secondary {
     margin-left: 40%;
 }
-.btn-primary:hover{
-   background-color: rgb(255, 102, 0);   
+.btn-secondary:hover{
+   background-color: rgb(157, 0, 255);   
 }
 /* /////////////footer //////////////////*/
 footer.footer {
@@ -317,7 +317,6 @@ h3{
     .logo a{
         margin-top: 0px;
     }
-    
     .main{
         height: 1015px;
         margin: auto
