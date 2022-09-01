@@ -45,9 +45,9 @@ h4{
     border-radius: 20px; 
     margin: 0px 20px 0px 20px;
     color: orangered;
-    box-shadow: 0 0 30px 0 rgb(255, 0, 0),
+   /*  box-shadow: 0 0 30px 0 rgb(255, 0, 0),
     0 0 30px 0 rgb(220, 20, 20), 
-    0 0 10px 0  rgb(175, 15, 15) inset;
+    0 0 10px 0  rgb(175, 15, 15) inset; */
 }
 .lead{
     color: white;

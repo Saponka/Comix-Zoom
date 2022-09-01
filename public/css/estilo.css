@@ -266,15 +266,14 @@ footer.footer .social-link {
     box-shadow: 0 3px 3px 0 rgba(0, 0, 0, 0.1);
 }
 footer.footer .social-link:hover {
-    background-color: #fa5204;
+    background-color: #2dfa04;
     text-decoration: none;
 }
 /*//////// Pagina Historia////////// */
 .tituloHistory{
     font-size: 95px;
     font-family: 'Rock Salt';
-    color: whitesmoke;
-    background-color: black;
+    color: rgb(242, 18, 96);
     padding: 15px;
     border-radius: 20px;
     margin-top: 90px;
@@ -283,23 +282,16 @@ footer.footer .social-link:hover {
     display: flex;
     flex-direction: row;
     justify-content: center;
-    box-shadow: 0 0 30px 0 purple,
-    0 0 30px 0 rgb(213, 20, 220), 
-    0 0 10px 0  plum inset;
 }
 .div1{
     margin: 0px 50px 0px 50px;   
 }
 h3{
-    color: whitesmoke;
-    background-color: black;
+    color: rgb(242, 18, 96);
     margin: auto;
     width: fit-content;
     padding: 10px;
     border-radius: 10px;  
-    box-shadow: 0 0 30px 0 purple,
-    0 0 30px 0 rgb(213, 20, 220), 
-    0 0 10px 0  plum inset;
 }
 
 .edades{

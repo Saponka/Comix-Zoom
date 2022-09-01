@@ -30,9 +30,9 @@ body{
     color: rgb(2, 169, 247);
     border-radius: 20px; 
     margin: 0px 20px 0px 20px;
-    box-shadow: 0 0 30px 0 rgb(0, 255, 242),
+    /* box-shadow: 0 0 30px 0 rgb(0, 255, 242),
     0 0 30px 0 rgb(0, 17, 252), 
-    0 0 10px 0  rgb(0, 195, 255) inset;
+    0 0 10px 0  rgb(0, 195, 255) inset; */
 }
 
 h1{
