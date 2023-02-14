@@ -139,7 +139,7 @@
            sera recibido inmediatamente para poder responder cualquier duda o interes en general....</p>
       </article><br>
       <div class="container2">
-        <form   action="https://formspree.io/f/xqkwyrny"   method="POST" id="formulario">
+        <form    method="POST" id="formulario"  action='https://formspree.io/f/xqkwyrny ' //"http://localhost:3000/comic/insertar"  >
         
           <div class="divContainer">
             <input type="text" name="nombre" id="nombre" class="input" placeholder="Ingrese su Nombre" value="" required />
@@ -165,7 +165,7 @@
             <h4 >Mensaje</h4><br>
             <textarea name="text" id="mensaje" cols="20" rows="10" placeholder="Mensaje" class="textArea" value=""></textarea>
           </div>
-          <button type="submit" class="btn btn-secondary">Enviar</button><br>
+          <button type="submit" class="btn btn-secondary" id="submit">Enviar</button><br>
       </div>
     </section><br>
     <hr style="color: whitesmoke;">
@@ -206,5 +206,34 @@
       integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
       crossorigin="anonymous"
     ></script>
+
+   <!--  <script>
+      document.getElementById('submit').addEventListener('click',enviar)
+        const inputs = document.querySelectorAll('input')
+    
+        async function enviar(e) {
+            e.preventDefault()
+            const response = await fetch('/comic/insertar', {
+                    method: 'POST',
+                    headers: {
+                        'Content-Type': 'application/json'
+                    },
+                    body: JSON.stringify({
+                        nombre: inputs[0].value,// inputs.nombre.value,//
+                        apellido: inputs[1].value,
+                        edad: inputs[2].value,//inputs.value//
+                        telefono: inputs[3].value,
+                        email: inputs.email.value,
+                        mensaje: inputs.mensaje.value
+                    })
+            });
+            let data = await response.json(); // parses JSON response into native JavaScript objects
+            console.log(data)
+    
+            
+
+            inputs.forEach(input => input.value = '')
+        }
+    </script> -->
   </body>
 </html>

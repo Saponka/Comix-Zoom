@@ -27,7 +27,7 @@ connection.end();
 module.exports = connection; // exportamos la coneccion para usar en el index.js 
 
   */
-
+const PASS = process.env.PASS 
 //--------------conexion con knex----------------------
 
 const knex = require('knex') ({
@@ -36,7 +36,7 @@ const knex = require('knex') ({
       host : 'localhost',
       user : 'root',
       port : '3306',
-      password : 'Heimerdingerchewbacca@501',
+      password : PASS,
       database : 'comics'
     },
 

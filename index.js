@@ -6,16 +6,21 @@ const express = require('express');
  
  //------------------------------ coneccion a la base de datos-------------------------------------------
 
- //const { connection } = require('./DB/config'); // conection traer config.js
+//const { connection } = require('./DB/config'); // conection traer config.js
 
 //---------------------------MIDDLEWARE----------------------------------------------------------------
 app.use(express.json());
 app.use(express.static('public'));    
 app.use(express.urlencoded({extended: false})); //lee formularios
 //-------------ruta----------------------------------------
+const controllers = require('./routes/comic');
 
 app.use('/comic',require('./routes/comic'));
 
+ /* app.post('/comic/insertar', async(req, res) => {
+    let data = await controllers.insertar(req.body);
+    res.json(data);
+});  */
 //--------port listen ---------------------------------------------------
 app.listen(PORT,() =>{
     console.log(`Servidor corriendo en el puerto:${PORT}`);
