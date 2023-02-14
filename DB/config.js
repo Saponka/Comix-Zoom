@@ -27,7 +27,9 @@ connection.end();
 module.exports = connection; // exportamos la coneccion para usar en el index.js 
 
   */
-const PASS = process.env.PASS 
+const dotenv = require('dotenv');
+dotenv.config(); 
+const PASS = process.env.PASS; 
 //--------------conexion con knex----------------------
 
 const knex = require('knex') ({
