@@ -29,7 +29,7 @@ module.exports = connection; // exportamos la coneccion para usar en el index.js
   */
 const dotenv = require('dotenv');
 dotenv.config(); 
-const PASS = process.env.PASS; 
+const PASSWORD = process.env.PASS; 
 //--------------conexion con knex----------------------
 
 const knex = require('knex') ({
@@ -38,7 +38,7 @@ const knex = require('knex') ({
       host : 'localhost',
       user : 'root',
       port : '3306',
-      password : PASS,
+      password : PASSWORD,
       database : 'comics'
     },
 
