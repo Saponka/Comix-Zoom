@@ -4,8 +4,8 @@
 }
 body{   
     background: #673AB7; 
-    background: -webkit-linear-gradient(to top, #001510, #673AB7);  /* Chrome 10-25, Safari 5.1-6 */
-    background: linear-gradient(to top, #001510, #4c2e7f); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    background: -webkit-linear-gradient(to top, #260c81, #673AB7);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to top, #260c81, #4c2e7f); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }
 header{
     display: grid;
